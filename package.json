@@ -1,0 +1,31 @@
+{
+  "name": "blockchain-smart-contract-qa-framework",
+  "version": "1.0.0",
+  "description": "QA automation framework for testing Solidity smart contracts using Hardhat, PyTest, Web3.py, and GitHub Actions.",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "test:python": "pytest -v --html=reports/pytest_report.html --self-contained-html",
+    "test:gas": "pytest tests/test_gas_usage.py -v",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "blockchain",
+    "qa",
+    "smart-contract-testing",
+    "solidity",
+    "hardhat",
+    "pytest",
+    "web3",
+    "ci-cd"
+  ],
+  "author": "Jimmy Unelus",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.15"
+  }
+}
+
