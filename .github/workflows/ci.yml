@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HARDHAT_DISABLE_TELEMETRY: "true"
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
     steps:
       - name: Checkout repository
